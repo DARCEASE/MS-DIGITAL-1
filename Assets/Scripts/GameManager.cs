@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//PURPOSE: To randomly generate platforms 
+//USAGE: Place this on an empty game object called Game Manager
 public class GameManager : MonoBehaviour
 {
     public GameObject platformPrefab;
@@ -15,7 +17,7 @@ public class GameManager : MonoBehaviour
         {
             Vector3 spawnPosition = new Vector3();
             spawnPosition.y += Random.Range(-10f, 50f); // they shoud be vertically this far away from eachother 
-            spawnPosition.x += Random.Range(-10f, 10f); // they should horizontally spawn this far away from eachother 
+            spawnPosition.x += Random.Range(-8f, 8f); // they should horizontally spawn this far away from eachother 
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
 
