@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 //PURPOSE: Camera Will Follow Player in a flowy kind of movement 
 //USAGE: attatch this to the MainCamera
+
+// rework this to be smooth like platformer project
+
 public class CameraFollow : MonoBehaviour
 {
     public Transform target;
