@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject platformPrefab;
-    public int platformCount = 200; //How Many total "bubbles are going to spawn"
+    public int platformCount = 150; //How Many total "bubbles are going to spawn"
 
 
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < platformCount; i++)
         {
             Vector3 spawnPosition = new Vector3();
-            spawnPosition.y += Random.Range(-10f, 50f); // they shoud be vertically this far away from eachother 
+            spawnPosition.y += Random.Range(-10f, 100f); // they shoud be vertically this far away from eachother 
             spawnPosition.x += Random.Range(-8f, 8f); // they should horizontally spawn this far away from eachother 
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
