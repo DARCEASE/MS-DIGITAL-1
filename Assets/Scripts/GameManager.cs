@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject platformPrefab;
-    public int platformCount = 150; //How Many total "bubbles are going to spawn"
+    public int platformCount = 50; //How Many total "bubbles are going to spawn"
 
 
     // Start is called before the first frame update
