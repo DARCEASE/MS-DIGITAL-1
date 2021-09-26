@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //PURPOSE:A UI Bar will be set the the mid center of the screen and visually represent time 
 //USAGE: Place this on the image UI that has filled properties 
@@ -31,6 +32,7 @@ public class BreathTimerBehavior : MonoBehaviour
         { 
             //you can instantiate the lose screen here - like set active an animation or video 
             Time.timeScale = 0;
+            SceneManager.LoadScene("LoseScene");
         }
     }
 }
