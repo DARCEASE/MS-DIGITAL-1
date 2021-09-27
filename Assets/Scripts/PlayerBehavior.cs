@@ -7,6 +7,7 @@ public class PlayerBehavior : MonoBehaviour
 {
     public float moveSpeed = 10f; // How fast are we going?
     public Rigidbody2D rb;
+    public AudioSource pushUp; // sCHWOOOMP
 
 
     private float moveX;
@@ -33,6 +34,10 @@ public class PlayerBehavior : MonoBehaviour
         if (collision.gameObject.tag == "WinCol")
         {
             SceneManager.LoadScene("WinScene");
+        }
+        if (collision.gameObject.tag == "bubble")
+        {
+            pushUp.Play();
         }
     }
 

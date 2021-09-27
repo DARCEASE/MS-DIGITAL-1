@@ -9,7 +9,7 @@ public class PlatformBehavior : MonoBehaviour
 {
     public float jumpForce = 10f; // wanna see how hard I can jump 
     public int bubbleCount; // counts how many times you collide with a bubble
-    public AudioSource pushUp; // sCHWOOOMP
+    
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class PlatformBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            pushUp.Play();
+            
         }
     }
 }
